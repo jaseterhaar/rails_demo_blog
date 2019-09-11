@@ -18,9 +18,6 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 
-#Make errors better
-gem 'better_errors', '~> 2.5', '>= 2.5.1'
-
 #Bulma css
 gem 'bulma-rails', '~> 0.7.5'
 
@@ -52,7 +49,11 @@ group :development do
   # Guard is a command line tool to easily handle events on file system modifications.
   gem 'guard', '~> 2.15', '>= 2.15.1'
   # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+
+  #Make errors better
+  gem 'better_errors'
+  
   gem 'spring-watcher-listen', '~> 2.0.0'
 
 end
